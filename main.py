@@ -31,7 +31,7 @@ async def echo(message: types.Message):
         response = wikipedia.summary(message.text)
         await message.answer(response)
     except:
-        await message.answer("Bunday malumot topilmadi")
+        await message.answer("No such information was found")
 
 
 if __name__ == '__main__':
