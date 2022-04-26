@@ -20,7 +20,7 @@ async def send_welcome(message: types.Message):
     """
     This handler will be called when user sends `/start` or `/help` command
     """
-    await message.reply("Assalomu alaykum Wikipedia\nbotga xush kelibsiz!")
+    await message.reply("Hello and welcome to Wikipedia bot!")
 
 
 @dp.message_handler()
