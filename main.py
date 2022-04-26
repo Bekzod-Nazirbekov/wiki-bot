@@ -3,7 +3,7 @@ import wikipedia
 
 from aiogram import Bot, Dispatcher, executor, types
 
-wikipedia.set_lang('uz')
+wikipedia.set_lang('en')
 
 API_TOKEN = '5208297006:AAHlSQXHNc2307sbkPnmis_1G66SPTtu-4A'
 
