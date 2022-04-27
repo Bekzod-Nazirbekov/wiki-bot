@@ -3,9 +3,9 @@ import wikipedia
 
 from aiogram import Bot, Dispatcher, executor, types
 
-wikipedia.set_lang('uz')
+wikipedia.set_lang('en')
 
-API_TOKEN = '5208297006:AAHlSQXHNc2307sbkPnmis_1G66SPTtu-4A'
+API_TOKEN = '5328179150:AAEAeMe9i_qj_dUL5nUllc6s4xagCjylsCY'
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -31,7 +31,7 @@ async def echo(message: types.Message):
         response = wikipedia.summary(message.text)
         await message.answer(response)
     except:
-        await message.answer("Bunday malumot topilmadi")
+        await message.answer("No such information was found")
 
 
 if __name__ == '__main__':
